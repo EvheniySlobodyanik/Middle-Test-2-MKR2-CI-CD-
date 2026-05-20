@@ -21,6 +21,7 @@ jobs:
           pip install -r requirements.txt
       - name: Run Tests
         run: |
+          cd $(dirname $(find . -name "manage.py" -not -path "*/.*" | head -n 1))
           python manage.py test
 
   deploy:
