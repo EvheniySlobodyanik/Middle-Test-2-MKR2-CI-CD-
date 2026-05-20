@@ -32,3 +32,8 @@ jobs:
       # Тут налаштовується деплой на Heroku за допомогою Heroku API Key (без фактичного розгортання)
       - name: Log execution
         run: echo "Ready to deploy to Heroku"
+
+- name: Run Tests
+      working-directory: ./MIDDLE-TEST-2-MKR2-CI-CD
+      run: |
+        python manage.py test
