@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ recipe.title }}</title>
+  </head>
+  <body>
+    <h1>{{ recipe.title }}</h1>
+    <p>{{ recipe.description }}</p>
+    <p>Дата створення: {{ recipe.created_at }}</p>
+    <a href="{% url 'recipe:main' %}">Назад до списку</a>
+  </body>
+</html>
